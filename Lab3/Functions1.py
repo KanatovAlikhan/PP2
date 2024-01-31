@@ -1,4 +1,4 @@
-'''
+
 #Ex1
 def gram_to_ounces(grams):
     print(grams/28.3495231)
@@ -38,9 +38,7 @@ def perm():
 s=str(input())
 permutations = list(itertools.permutations(s))
 perm()
-'''
 #Ex6////////////
-''' 
 s=str(input())
 #Ex7
 def has_33(nums):
@@ -52,19 +50,14 @@ def has_33(nums):
             break
     print(ans)
 has_33([1, 3, 3])
-'''
 #Ex8////////////////// 
-
-'''
 #Ex9
 import math
 def volume(r):
     ans=4/3 * 3.14 * math.pow(r,3)
     print(ans)
 volume(int(input("Write radius ")))
-'''
 #Ex10///////////
-'''
 #Ex11
 def palindrome(word):
     if(word == t):
@@ -106,4 +99,4 @@ def guess():
         cnt+=1
     print("Good job,",name,"! You guessed my number in",cnt+1,"guesses!")
 guess()
-'''
+#Ex14 ////////////
