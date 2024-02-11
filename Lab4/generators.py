@@ -1,6 +1,9 @@
 #Ex1
+def kvadrat(n):
+    for i in range(n+1):
+        yield i**2
 n=int(input())
-x=map(lambda x:x**2,range(1,n+1))
+x=kvadrat(n)
 for i in x:
     print(i)
 #Ex2
