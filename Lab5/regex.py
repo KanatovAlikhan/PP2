@@ -1,5 +1,4 @@
 import re
-'''
 #Ex1
 txt=input()
 x=re.search("ab*",txt)
@@ -28,15 +27,17 @@ print(x)
 txt=input()
 x=re.sub(r"[_]","",txt)
 print(x)
-'''
 #Ex8
 txt=input()
-x=re.split(r"[A-Z]",txt)
-print(x)
-'''
-#Ex9//////////
-#Ex10///////////////////
+x=re.findall(r"[^A-Z]*[A-Z][^A-Z]*",txt)
+result=' '.join(x)
+print(result)
+#Ex9
 txt=input()
-x=re.sub(r"[A-Z]","_",txt)
+x=re.findall(r"[A-Z][^A-Z]*",txt)
+res=' '.join(x)
+print(res)
+#Ex10
+txt=input()
+x=re.sub(r"(?<!^)(?=[A-Z])","_",txt).lower()
 print(x)
-'''
