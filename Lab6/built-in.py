@@ -15,8 +15,8 @@ s=input()
 x=iter(s)
 upper=0
 lower=0
-for i in x:
-    if i>="A" and i<="Z":
+for i in s:
+    if i.isupper():
         upper+=1
     else:
         lower+=1
