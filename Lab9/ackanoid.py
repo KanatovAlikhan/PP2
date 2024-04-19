@@ -37,7 +37,7 @@ block_list = [pygame.Rect(10 + 120 * i, 50 + 70 * j, 100, 50) for i in range(10)
 color_list = [(random.randrange(0, 255), random.randrange(0, 255), random.randrange(0, 255)) for i in range(10) for j in range(4)]
 bonus_block_index = random.randrange(len(block_list))
 unbreakable_block_list = [pygame.Rect(10 + 120 * i, 120, 100, 50) for i in range(5)]
-unbreakable_color = (100, 100, 100)
+unbreakable_color = (180, 150, 200)
 losefont = pygame.font.SysFont('comicsansms', 40)
 losetext = losefont.render('Game Over', True, (255, 255, 255))
 losetextRect = losetext.get_rect()
@@ -88,7 +88,7 @@ while not done:
             done = True
         elif event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             is_paused = not is_paused
-            if not is_paused:  # Exiting pause resets settings mode
+            if not is_paused: 
                 in_settings = False
             continue
         elif event.type == pygame.MOUSEBUTTONDOWN and is_paused:
